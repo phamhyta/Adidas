@@ -1,71 +1,38 @@
  @extends('layout.header')
  @section('content')
+ {{-- Quang cao --}}
+<div class="h-52">
+    <img id="img" class="w-full h-full" src="{{asset("img/voucher/voucher(1).jpg")}}" alt="" width="512" height="384">
+            <script type="text/javascript">
+                var img = document.getElementById("img");
+                var currentPos = 0;
+                var imgs = ["{{asset("img/voucher/voucher(1).jpg")}}",
+                "{{asset("img/voucher/voucher(2).jpg")}}",
+                "{{asset("img/voucher/voucher(4).jpg")}}",
+                "{{asset("img/voucher/voucher(5).jpg")}}",
+                "{{asset("img/voucher/voucher(6).jpg")}}",];
+                function volgendefoto()
+                {
+                    if(++currentPos > 4)
+                        currentPos = 0;
+                    img.src = imgs[currentPos];
+                }
+                setInterval(volgendefoto, 3000);
+            </script>
+</div>
 <!-- Sản phẩm chi tiết -->
 <div class="flex justify-between w-full">
     <!--!!-->
     <div class="w-3/12">
         <!-- 3 ảnh (để chạy) mẫu khác của sản phẩm -->
-        <div class="pl-2">
-            <!-- Ảnh 1 -->
-            <div class="border-b-2">
-                <img id="image1" class="w-5/6  mt-4 ml-6 mb-2" src="{{asset("img/anh_giay_nam/male_shoes(1).png")}}" alt="" width="512" height="384">
-                <script type="text/javascript">
-                    var image = document.getElementById("image1");
-                    var currentPos = 0;
-                    var images = ["{{asset("img/anh_giay_nam/male_shoes(1).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(2).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(3).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(4).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(5).png")}}",];
-                    function volgendefoto()
-                    {
-                        if(++currentPos > 4)
-                            currentPos = 0;
-                        image.src = images[currentPos];
-                    }
-                    setInterval(volgendefoto, 3000);
-                </script>
-            </div>
-            <!-- Ảnh 2 -->
-            <div class="border-b-2">
-                <img id="image2" class="w-5/6  mt-4 ml-6 mb-2" src="{{asset("img/anh_giay_nam/male_shoes(6).png")}}" alt="" width="512" height="384">
-                <script type="text/javascript">
-                    var imagee = document.getElementById("image2");
-                    var currentPos = 0;
-                    var images = ["{{asset("img/anh_giay_nam/male_shoes(6).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(7).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(8).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(9).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(10).png")}}",];
-                    function volgendefoto()
-                    {
-                        if(++currentPos > 4)
-                            currentPos = 0;
-                        imagee.src = images[currentPos];
-                    }
-                    setInterval(volgendefoto, 3000);
-                </script>
-            </div>
-            <!-- Ảnh 3 -->
-                <div> 
-                <img id="image3" class="w-5/6  mt-4 ml-6" src="{{asset("img/anh_giay_nam/male_shoes(11).png")}}" alt="" width="512" height="384">
-                <script type="text/javascript">
-                    var imageee = document.getElementById("image3");
-                    var currentPos = 0;
-                    var images = ["{{asset("img/anh_giay_nam/male_shoes(11).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(12).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(13).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(14).png")}}",
-                    "{{asset("img/anh_giay_nam/male_shoes(15).png")}}",];
-                    function volgendefoto()
-                    {
-                        if(++currentPos > 4)
-                            currentPos = 0;
-                        imageee.src = images[currentPos];
-                    }
-                    setInterval(volgendefoto, 3000);
-                </script>
-            </div>
+        <div>
+            <img id="image1" class="w-5/6  mt-4 mb-2 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(1).png")}}" alt="" width="512" height="384">
+        </div>
+        <div>
+            <img id="image2" class="w-5/6  mt-4 mb-2" src="{{asset("img/anh_giay_nam/male_shoes(6).png")}}" alt="" width="512" height="384">
+        </div>
+        <div> 
+            <img id="image3" class="w-5/6  mt-4" src="{{asset("img/anh_giay_nam/male_shoes(11).png")}}" alt="" width="512" height="384">
         </div>
     </div>
     <!-- Ảnh to để ở giữa trang -->
@@ -83,7 +50,7 @@
                 <div class="text-xl font-semibold text-gray-700 ml-1"> <!-- Giá sau khi giảm giá -->
                     $90.00
                 </div>
-                <div class="text-sm font-semibold text-gray-500 pl-2 line-through mr-2"> <!-- Giá gốc -->
+                <div class="text-sm font-semibold text-gray-500 pl-2 line-through"> <!-- Giá gốc -->
                     $110.00
                 </div>
                 <div class="w-full flex-none text-sm font-medium text-gray-700"> <!-- Mô tả ngắn -->
