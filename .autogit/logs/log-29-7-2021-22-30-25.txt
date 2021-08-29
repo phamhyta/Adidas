@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sun Aug 29 2021 22:30:25 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/layout/header.blade.php
+* resources/views/welcome.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/autogit.json
+* laravel
+
+
+Deleted files:
+
+
+Renamed files:

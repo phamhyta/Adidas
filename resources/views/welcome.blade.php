@@ -2,7 +2,7 @@
  @section('content')
  {{-- Quang cao --}}
 <div class="h-52">
-    <img id="img" class="w-full h-full" src="{{asset("img/voucher/voucher(1).jpg")}}" alt="" width="512" height="384">
+    <img id="img" class="w-full h-full object-contain" src="{{asset("img/voucher/voucher(1).jpg")}}" alt="" width="512" height="384">
             <script type="text/javascript">
                 var img = document.getElementById("img");
                 var currentPos = 0;
@@ -29,15 +29,15 @@
             <img id="image1" class="w-5/6  mt-4 mb-2 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(1).png")}}" alt="" width="512" height="384">
         </div>
         <div>
-            <img id="image2" class="w-5/6  mt-4 mb-2" src="{{asset("img/anh_giay_nam/male_shoes(6).png")}}" alt="" width="512" height="384">
+            <img id="image2" class="w-5/6  mt-4 mb-2 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(6).png")}}" alt="" width="512" height="384">
         </div>
         <div> 
-            <img id="image3" class="w-5/6  mt-4" src="{{asset("img/anh_giay_nam/male_shoes(11).png")}}" alt="" width="512" height="384">
+            <img id="image3" class="w-5/6  mt-4 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(11).png")}}" alt="" width="512" height="384">
         </div>
     </div>
     <!-- Ảnh to để ở giữa trang -->
     <div class="w-6/12">
-        <img class="pl-2 pt-28 h-5/6" src="{{asset("img/anh_giay_nam/male_shoes(16).png")}}" alt="">
+        <img class="pl-2 pt-28 h-5/6 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(16).png")}}" alt="">
     </div>
     <!-- Phần thông tin sản phẩm -->
     <div class="w-4/12 pl-8">
