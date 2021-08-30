@@ -166,33 +166,33 @@
               <?php
                   for($i = 1; $i <= 20; $i++){
                       echo '<li class="my-5 pr-5 ml-0 w-1/4">
-                              <div>
-                                  <div>
-                                      <i class="far fa-heart"></i>
-                                      <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
+                        <div>
+                            <div>
+                                <i class="far fa-heart"></i>
+                                <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
+                            </div>
+                            <div class="bg-gray-700 flex justify-between w-full">
+                              <ul class="w-full">
+                              <li class="pt-4 w-full">
+                                  <div class="flex">
+                                      <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
+                                          <p>NIKE FAKE</p>
+                                      </h1>
+                                      <div class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
+                                          $90.00
+                                      </div>
+                                      <div class="text-sm font-semibold text-white pl-2 line-through relative float-left"> <!-- Giá gốc -->
+                                          $110.00
+                                      </div>
                                   </div>
-                                  <div class="bg-gray-700 flex justify-between w-full">
-                                    <ul class="w-full">
-                                    <li class="pt-4 w-full">
-                                        <div class="flex">
-                                            <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
-                                                <p>NIKE FAKE</p>
-                                            </h1>
-                                            <div class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
-                                                $90.00
-                                            </div>
-                                            <div class="text-sm font-semibold text-white pl-2 line-through relative float-left"> <!-- Giá gốc -->
-                                                $110.00
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="w-full text-sm font-medium text-white pb-4 pl-2">
-                                        Sản phẩm không chính hãng
-                                    </li>
-                                </ul>
-                                </div>
-                              </div>
-                          </li>';
+                              </li>
+                              <li class="w-full text-sm font-medium text-white pb-4 pl-2">
+                                  Sản phẩm không chính hãng
+                              </li>
+                          </ul>
+                          </div>
+                        </div>
+                        </li>';
                       //echo '<img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'">';
                   }    
               ?> 
