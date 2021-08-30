@@ -1,11 +1,31 @@
 @extends('layout.header')
 @section('content')
+{{-- Quang cao --}}
+<div class="w-full">
+  <img id="img" class="w-full h-full object-contain" src="{{asset("img/voucher/voucher(1).jpg")}}" alt="" width="512" height="384">
+  <script type="text/javascript">
+      var img = document.getElementById("img");
+      var currentPos = 0;
+      var imgs = ["{{asset("img/voucher/voucher(1).jpg")}}",
+      "{{asset("img/voucher/voucher(2).jpg")}}",
+      "{{asset("img/voucher/voucher(4).jpg")}}",
+      "{{asset("img/voucher/voucher(5).jpg")}}",
+      "{{asset("img/voucher/voucher(6).jpg")}}",];
+      function volgendefoto()
+      {
+          if(++currentPos > 4)
+              currentPos = 0;
+          img.src = imgs[currentPos];
+      }
+      setInterval(volgendefoto, 3000);
+  </script>
+  </div>
   <!-- Chon mau giay -->
   <div class="mx-5">
       <div class="font-bold text-5xl font-medium pb-10">
           Shoes selector
       </div>
-      <div class="flex flex-row flex-wrap">
+      <div class="flex flex-row flex-wrap pr-5">
           <img src="{{asset("img/nikadas_male_shoes_selector.png")}}" alt="" class="w-1/3 object-contain">
           
           <div class="bg-gray-300 w-4/6 pt-14">
@@ -153,18 +173,26 @@
                                       <i class="far fa-heart"></i>
                                       <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
                                   </div>
-                                  <div class="bg-gray-500 flex justify-between">
-                                      <ul class="pt-5 pl-5 pb-1">
-                                          <li class="text-white p-2 font-medium text-base">
-                                              Shoes '.$i.'
-                                          </li>
-                                          <li class="text-white p-2 font-normal text-sm">Men shoes</li>
-                                          <li class="text-white p-2 font-normal text-sm">+4 color</li>
-                                      </ul>
-                                      <div class="float-right text-white pr-5 pt-6 font-medium text-base">
-                                          200$
-                                      </div>
-                                  </div>
+                                  <div class="bg-gray-700 flex justify-between">
+                                    <ul>
+                                        <li class="pt-4">
+                                            <div class="flex">
+                                            <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
+                                                <p id="h11">NIKE FAKE</p>
+                                            </h1>
+                                            <div id="gia1" class="text-l font-semibold text-white pl-6"> <!-- Giá sau khi giảm giá -->
+                                                $90.00
+                                            </div>
+                                            <div id="giag1" class="text-sm font-semibold text-white pl-2 line-through mr-4"> <!-- Giá gốc -->
+                                                $110.00
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li class="w-full text-sm font-medium text-white pb-4 pl-2">
+                                            Sản phẩm không chính hãng
+                                        </li>
+                                    </ul>
+                                </div>
                               </div>
                           </li>';
                       //echo '<img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'">';

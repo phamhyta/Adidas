@@ -260,85 +260,42 @@
     <div class="flex justify-center text-xl font-semibold border-b-2">
         YOU MIGHT LIKE
     </div>
-    <div class="flex">
-        <div class="w-1/4 h-80">
-            <img class="w-full flex items-center justify-center py-4 pr-8" src="{{asset("img/anh_giay_nam/male_shoes(25).jpg")}}" alt="">
-            <div class="flex flex-wrap">
-                <h1 class="flex-auto text-l font-semibold"> <!-- Tên sp -->
-                    <p id="h11">NIKE FAKE</p>
-                </h1>
-                <div id="gia1" class="text-l font-semibold text-gray-700"> <!-- Giá sau khi giảm giá -->
-                    $90.00
-                </div>
-                <div id="giag1" class="text-sm font-semibold text-gray-500 pl-2 line-through mr-4"> <!-- Giá gốc -->
-                    $110.00
-                </div>
-                <div class="flex">
-                    <div id="mt1" class="w-full text-sm font-medium text-gray-700"> <!-- Mô tả ngắn -->
-                        Sản phẩm không chính hãng
-                    </div>    
-                </div>
-            </div>
-        </div>
-        <div class="w-1/4 h-80">
-            <img class="w-full flex items-center justify-center py-4 pr-8" src="{{asset("img/anh_giay_nam/male_shoes(26).jpg")}}" alt="">
-            <div class="flex flex-wrap">
-                <h1 class="flex-auto text-l font-semibold"> <!-- Tên sp -->
-                    ADIDAS
-                </h1>
-                <div class="text-l font-semibold text-gray-700"> <!-- Giá sau khi giảm giá -->
-                    $120.00
-                </div>
-                <div class="text-sm font-semibold text-gray-500 pl-2 line-through mr-4"> <!-- Giá gốc -->
-                    $200.00
-                </div>
-                <div class="flex">
-                    <div id="mt1" class="w-full text-sm font-medium text-gray-700"> <!-- Mô tả ngắn -->
-                        Sản phẩm chất lương cao
-                    </div>  
-                </div>
-            </div>
-        </div>
-        <div class="w-1/4 h-80">
-            <img class="w-full flex items-center justify-center py-4 pr-8" src="{{asset("img/anh_giay_nam/male_shoes(35).jpg")}}" alt="">
-            <div class="flex flex-wrap">
-                <h1 class="flex-auto text-l font-semibold"> <!-- Tên sp -->
-                    CONVER
-                </h1>
-                <div class="text-l font-semibold text-gray-700"> <!-- Giá sau khi giảm giá -->
-                    $120.00
-                </div>
-                <div class="text-sm font-semibold text-gray-500 pl-2 line-through mr-4"> <!-- Giá gốc -->
-                    $160.00
-                </div>
-                <div class="flex">
-                    <div id="mt1" class="w-full text-sm font-medium text-gray-700"> <!-- Mô tả ngắn -->
-                        Hàng thượng hải, số lượng có hạn
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w-1/4 h-80">
-            <img class="w-full h-64 flex items-center justify-center pt-4" src="{{asset("img/anh_giay_nam/male_shoes(36).jpg")}}" alt="">
-            <div class="bg-gray-50">
-                <div class="flex flex-wrap pt-4">
-                    <h1 class="flex-auto text-l font-semibold"> <!-- Tên sp -->
-                        BALEN
-                    </h1>
-                    <div class="text-l font-semibold text-gray-700"> <!-- Giá sau khi giảm giá -->
-                        $160.00
-                    </div>
-                    <div class="text-sm font-semibold text-gray-500 pl-2 line-through"> <!-- Giá gốc -->
-                        $210.00
-                    </div>
-                    <div class="flex">
-                        <div id="mt1" class="w-full text-sm font-medium text-gray-700"> <!-- Mô tả ngắn -->
-                            Sản xuất thủ công
-                        </div>           
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="flex justify-between">
+        <ul class="flex flex-wrap font-normal w-full ">
+            <?php
+                for($i = 1; $i <= 4; $i++){
+                    echo '<li class="my-5 pr-5 ml-0 w-1/4">
+                            <div>
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                    <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
+                                </div>
+                                <div class="bg-gray-700 flex justify-between">
+                                    <ul>
+                                        <li class="pt-4">
+                                            <div class="flex">
+                                            <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
+                                                <p id="h11">NIKE FAKE</p>
+                                            </h1>
+                                            <div id="gia1" class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
+                                                $90.00
+                                            </div>
+                                            <div id="giag1" class="text-sm font-semibold text-white pl-2 line-through mr-4"> <!-- Giá gốc -->
+                                                $110.00
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li class="w-full text-sm font-medium text-white pb-4 pl-2">
+                                            Sản phẩm không chính hãng
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>';
+                    //echo '<img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'">';
+                }    
+            ?> 
+        </ul>
     </div>
 </div>
 @endsection
