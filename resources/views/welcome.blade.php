@@ -85,13 +85,55 @@
                 </div>
                 <!-- Thanh chọn màu -->
                 <div class="flex items-baseline mt-4 mb-6">
-                    <div class="px-2 flex">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-trainers-den-bac-nam-nu.jpg" type="image" name="color" alt="Submit">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" type="image" name="color" alt="Submit">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="https://cdn.under.vn/wp-content/uploads/2020/03/balenciaga-triple-s-vang-xanh-replica-11-1.jpg" type="image" name="color" alt="Submit">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="https://cf.shopee.vn/file/bcdc85ba64bcde7041321b1b04de30a3" type="image" name="color" alt="Submit">
+                    <div class="px-2 flex">                        
+                        <button type="button">
+                            <img id="color1" onclick="setColor1()" class="h-20 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-trainers-den-bac-nam-nu.jpg" alt="">
+                        </button>
+                        <button type="button">
+                            <img id="color2" onclick="setColor2()" class="h-20 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" alt="">
+                        </button>
+                        <button type="button">
+                            <img id="color3" onclick="setColor3()" class="h-20 p-1 flex items-center justify-center rounded-lg" src="https://cdn.under.vn/wp-content/uploads/2020/03/balenciaga-triple-s-vang-xanh-replica-11-1.jpg" alt="">
+                        </button>
+                        <button type="button">
+                            <img id="color4" onclick="setColor4()" class="h-20 p-1 flex items-center justify-center rounded-lg" src="https://cf.shopee.vn/file/bcdc85ba64bcde7041321b1b04de30a3" alt="">
+                        </button>                  
                     </div>
                 </div>
+                <script>
+                    var a = document.getElementById("color1");
+                    var b = document.getElementById("color2");
+                    var c = document.getElementById("color3");
+                    var d = document.getElementById("color4");
+                    function setColor1()
+                    {
+                        a.style.border = "solid"; 
+                        b.style.border = "none";
+                        c.style.border = "none";
+                        d.style.border = "none";
+                    }
+                    function setColor2()
+                    {
+                        b.style.border = "solid"; 
+                        a.style.border = "none";
+                        c.style.border = "none";
+                        d.style.border = "none";
+                    }
+                    function setColor3()
+                    {
+                        c.style.border = "solid"; 
+                        b.style.border = "none";
+                        a.style.border = "none";
+                        d.style.border = "none";
+                    }
+                    function setColor4()
+                    {
+                        d.style.border = "solid"; 
+                        b.style.border = "none";
+                        c.style.border = "none";
+                        a.style.border = "none";
+                    }
+                </script>
                 <!-- Thanh chọn size -->
                 <div class="flex items-baseline mt-4 mb-6 flex-wrap font-normal justify-center inline-block relative">
                     <select class="block pl-12 appearance-none w-full bg-white border-b border-gray-400 hover:border-gray-700 px-4 py-1 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
@@ -109,12 +151,12 @@
                 <!-- Thanh thêm vào giỏ hàng, mua ngay -->
                 <div class="mb-2 text-sm font-medium">
                     <div class="">
-                        <button class="w-full py-2 mb-2 items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
-                        <button class="w-full py-2 mb-2 items-center justify-center rounded-md border border-gray-900" type="button">Add to bag</button>
+                        <button class="w-full py-2 mb-2 items-center justify-center rounded-md bg-black text-white hover:bg-gray-800" type="submit">Buy now</button>
+                        <button class="w-full py-2 mb-2 items-center justify-center rounded-md border border-gray-900 hover:bg-gray-50" type="button">Add to bag</button>
                     </div>
                     <!-- Nút thêm vào yêu thích -->
                     <div>
-                        <button onclick="setColor()" id="btn" class="flex items-center justify-center w-full h-9 rounded-md text-gray-400 border border-pink-900 bg-gray-100" type="button" aria-label="like">
+                        <button onclick="setColor()" id="btn" class="flex items-center justify-center w-full h-9 rounded-md text-gray-400 border border-pink-900 bg-white hover:bg-gray-50" type="button" aria-label="like">
                             <svg width="20" height="20" fill="currentColor">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
                             </svg>
