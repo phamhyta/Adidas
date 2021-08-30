@@ -2,19 +2,19 @@
 @section('content')
 {{-- slider --}}
 <div class="w-full">
-    <img id="img" class="w-full h-96 object-contain" src="https://giayhiendai.com/upload/hinhanh/slider-19801.jpg" alt="" width="512" height="384">
+    <img id="img" class="w-full object-contain" src="https://giayhiendai.com/upload/hinhanh/slider-19801.jpg" alt="" width="512" height="384">
     <script type="text/javascript">
         var img = document.getElementById("img");
         var currentPos = 0;
-        var imgs = ["https://giayhiendai.com/upload/hinhanh/slider-19801.jpg","https://htstore87.com/wp-content/uploads/2021/04/slider_2.png",
-        ];
+        var imgs = ["https://giayhiendai.com/upload/hinhanh/slider-19801.jpg",
+        "https://htstore87.com/wp-content/uploads/2021/04/slider_2.png",];
         function volgendefoto()
         {
             if(++currentPos > 1)
                 currentPos = 0;
             img.src = imgs[currentPos];
         }
-        setInterval(volgendefoto, 4000);
+        setInterval(volgendefoto, 5000);
     </script>
   </div>
 <div class="px-32 py-5">
@@ -25,26 +25,26 @@
             <!-- 3 ảnh (để chạy) mẫu khác của sản phẩm -->
             <button onclick="setImage1()">
                 <div>
-                    <img id="image1" class="w-5/6  mt-4 mb-2 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(1).png")}}" alt="" width="512" height="384">
+                    <img id="image1" class="w-5/6  mt-4 mb-2 object-contain" src="https://cdn.under.vn/wp-content/uploads/2020/03/balenciaga-triple-s-vang-xanh-replica-11-1.jpg" alt="" width="512" height="384">
                 </div>
             </button>
             <button onclick="setImage2()">
                 <div>
-                    <img id="image2" class="w-5/6  mt-4 mb-2 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(6).png")}}" alt="" width="512" height="384">
+                    <img id="image2" class="w-5/6  mt-4 mb-2 object-contain" src="https://cf.shopee.vn/file/bcdc85ba64bcde7041321b1b04de30a3" alt="" width="512" height="384">
                 </div>
             </button>
             <button onclick="setImage3()">
                 <div> 
-                    <img id="image3" class="w-5/6  mt-4 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(11).png")}}" alt="" width="512" height="384">
+                    <img id="image3" class="w-5/6  mt-4 object-contain" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-trainers-den-bac-nam-nu.jpg" alt="" width="512" height="384">
                 </div>
             </button>
         </div>
         <!-- Ảnh to để ở giữa trang -->
         <div class="w-6/12">
-            <img id="image" class="pl-2 pt-28 h-5/6 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(16).png")}}" alt="">
+            <img id="image" class="pl-2 pt-28 h-5/6 object-contain" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" alt="">
         </div>
         <script>
-            var x = "{{asset("img/anh_giay_nam/male_shoes(16).png")}}";
+            var x = "https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg";
             var a = document.getElementById("image");
             var b = document.getElementById("image1");
             var c = document.getElementById("image2");
@@ -86,10 +86,10 @@
                 <!-- Thanh chọn màu -->
                 <div class="flex items-baseline mt-4 mb-6">
                     <div class="px-2 flex">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-trainers-den-bac-nam-nu.jpg" type="image" name="color" alt="Submit">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" type="image" name="color" alt="Submit">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="https://cdn.under.vn/wp-content/uploads/2020/03/balenciaga-triple-s-vang-xanh-replica-11-1.jpg" type="image" name="color" alt="Submit">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="https://cf.shopee.vn/file/bcdc85ba64bcde7041321b1b04de30a3" type="image" name="color" alt="Submit">
                     </div>
                 </div>
                 <!-- Thanh chọn size -->
