@@ -1,8 +1,8 @@
 @extends('layout.header')
 @section('content')
 {{-- slider --}}
-<div class="w-full">
-    <img id="img" class="w-full object-contain" src="https://giayhiendai.com/upload/hinhanh/slider-19801.jpg" alt="" width="512" height="384">
+<div class="w-full h-90">
+    <img id="img" class="w-full h-full" src="https://giayhiendai.com/upload/hinhanh/slider-19801.jpg" alt="">
     <script type="text/javascript">
         var img = document.getElementById("img");
         var currentPos = 0;
@@ -16,7 +16,7 @@
         }
         setInterval(volgendefoto, 5000);
     </script>
-  </div>
+</div>
 <div class="px-32 py-5">
     <!-- Sản phẩm chi tiết -->
     <div class="flex justify-between w-full">
@@ -44,25 +44,25 @@
             <img id="image" class="pl-2 pt-28 h-5/6 object-contain" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" alt="">
         </div>
         <script>
-            var x = "https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg";
-            var a = document.getElementById("image");
-            var b = document.getElementById("image1");
-            var c = document.getElementById("image2");
-            var d = document.getElementById("image3");
+            var x1 = "https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg";
+            var a1 = document.getElementById("image");
+            var b1 = document.getElementById("image1");
+            var c1 = document.getElementById("image2");
+            var d1 = document.getElementById("image3");
             function setImage1() {
-                x = a.src;
-                a.src = b.src;
-                b.src = x;
+                x1 = a1.src;
+                a1.src = b1.src;
+                b1.src = x1;
             }
             function setImage2() {
-                x = a.src;
-                a.src = c.src;
-                c.src = x;
+                x1 = a1.src;
+                a1.src = c1.src;
+                c1.src = x1;
             }
             function setImage3() {
-                x = a.src;
-                a.src = d.src;
-                d.src = x;
+                x1 = a1.src;
+                a1.src = d1.src;
+                d1.src = x1;
             }
         </script>
         <!-- Phần thông tin sản phẩm -->
@@ -87,16 +87,16 @@
                 <div class="flex items-baseline mt-4 mb-6">
                     <div class="px-2 flex">                        
                         <button type="button">
-                            <img id="color1" onclick="setColor1()" class="h-20 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-trainers-den-bac-nam-nu.jpg" alt="">
+                            <img id="color1" onclick="setColor1()" class="object-contain h-20 px-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-trainers-den-bac-nam-nu.jpg" alt="">
                         </button>
                         <button type="button">
-                            <img id="color2" onclick="setColor2()" class="h-20 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" alt="">
+                            <img id="color2" onclick="setColor2()" class="object-contain h-20 px-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" alt="">
                         </button>
                         <button type="button">
-                            <img id="color3" onclick="setColor3()" class="h-20 p-1 flex items-center justify-center rounded-lg" src="https://cdn.under.vn/wp-content/uploads/2020/03/balenciaga-triple-s-vang-xanh-replica-11-1.jpg" alt="">
+                            <img id="color3" onclick="setColor3()" class="object-contain h-20 px-1 flex items-center justify-center rounded-lg" src="https://cdn.under.vn/wp-content/uploads/2020/03/balenciaga-triple-s-vang-xanh-replica-11-1.jpg" alt="">
                         </button>
                         <button type="button">
-                            <img id="color4" onclick="setColor4()" class="h-20 p-1 flex items-center justify-center rounded-lg" src="https://cf.shopee.vn/file/bcdc85ba64bcde7041321b1b04de30a3" alt="">
+                            <img id="color4" onclick="setColor4()" class="object-contain h-20 px-1 flex items-center justify-center rounded-lg" src="https://cf.shopee.vn/file/bcdc85ba64bcde7041321b1b04de30a3" alt="">
                         </button>                  
                     </div>
                 </div>
@@ -184,7 +184,7 @@
     <div class="pt-10 border-t-2">
         <div class="flex">
             <div class="w-1/2">
-                <img class="" src="https://giaynamvip.com/upload/product/gnk103/giay-boot-nam-co-cao-da-bo-that-chat-choi-5.jpg">
+                <img class="object-contain" src="https://giaynamvip.com/upload/product/gnk103/giay-boot-nam-co-cao-da-bo-that-chat-choi-5.jpg">
             </div>
             <div class="w-1/2">
                 <div class="pl-8">
@@ -253,7 +253,7 @@
                         Trần Xuân Hương
                     </p>
                 </div>
-                <p class="border-b-2 border-gray-500 w-2/3">Sản Phẩm dùng tốt</p> <!-- Comment -->
+                <p class="w-2/3">Sản Phẩm dùng tốt</p> <!-- Comment -->
                 <div class="flex text-sm font-medium text-gray-700 w-2/3 mt-2">
                     26/03/2021
                     <div class="ml-32 flex">
@@ -271,7 +271,7 @@
                         Lê Hưng
                     </p>
                 </div>
-                <p class="border-b-2 border-gray-500 w-2/3">Sản Phẩm dùng tạm được</p>
+                <p class="w-2/3">Sản Phẩm dùng tạm được</p>
                 <div class="flex text-sm font-medium text-gray-700 w-2/3 mt-2">
                     12/06/2021
                     <div class="ml-32 flex">
@@ -289,7 +289,7 @@
                         Lê Minh Tiến
                     </p>
                 </div>
-                <p class="border-b-2 border-gray-500 w-2/3">Amazingg goodd chóp</p>
+                <p class="w-2/3">Amazingg goodd chóp</p>
                 <div class="flex text-sm font-medium text-gray-700 w-2/3 mt-2">
                     13/05/2021
                     <div class="ml-32 flex">
@@ -310,7 +310,7 @@
                 <p class="">Sản phẩm nên mua</p>
             </div>
             <div class="w-1/2 float-left">
-                <img class="" src="https://cf.shopee.vn/file/6428eb140b43d0904b6466cdd81489e1">
+                <img class="object-contain" src="https://cf.shopee.vn/file/6428eb140b43d0904b6466cdd81489e1">
             </div>
         </div>
     </div>
@@ -323,36 +323,34 @@
             <ul class="flex flex-wrap font-normal w-full ">
                 <?php
                     for($i = 1; $i <= 4; $i++){
-                        echo '<li class="my-5 pr-5 ml-0 w-1/4">
-                                <div>
-                                    <div>
-                                        <i class="far fa-heart"></i>
-                                        <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
-                                    </div>
-                                    <div class="bg-gray-700 flex justify-between">
-                                        <ul>
-                                            <li class="pt-4">
-                                                <div class="flex">
-                                                <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
-                                                    <p id="h11">NIKE FAKE</p>
-                                                </h1>
-                                                <div id="gia1" class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
-                                                    $90.00
-                                                </div>
-                                                <div id="giag1" class="text-sm font-semibold text-white pl-2 line-through mr-4"> <!-- Giá gốc -->
-                                                    $110.00
-                                                </div>
-                                                </div>
-                                            </li>
-                                            <li class="w-full text-sm font-medium text-white pb-4 pl-2">
-                                                Sản phẩm không chính hãng
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>';
-                        //echo '<img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'">';
-                    }    
+                    echo '<li class="my-5 pr-5 ml-0 w-1/4">
+                        <div>
+                            <div>
+                                <i class="far fa-heart"></i>
+                                <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
+                            </div>
+                            <div class="bg-gray-700 flex justify-between">
+                                <ul>
+                                    <li class="pt-4">
+                                        <div class="flex">
+                                        <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
+                                            <p id="h11">NIKE FAKE</p>
+                                        </h1>
+                                        <div id="gia1" class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
+                                            $90.00
+                                        </div>
+                                        <div id="giag1" class="text-sm font-semibold text-white pl-2 line-through mr-4"> <!-- Giá gốc -->
+                                            $110.00
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <li class="w-full text-sm font-medium text-white pb-4 pl-2">
+                                        Sản phẩm không chính hãng
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>';}    
                 ?> 
             </ul>
         </div>
