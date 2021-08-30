@@ -1,8 +1,8 @@
 @extends('layout.header')
 @section('content')
 {{-- slider --}}
-<div class="w-full">
-  <img id="img" class="w-full object-contain" src="https://giayhiendai.com/upload/hinhanh/slider-19801.jpg" alt="" width="512" height="384">
+<div class="w-full h-96">
+  <img id="img" class="w-full h-full" src="https://giayhiendai.com/upload/hinhanh/slider-19801.jpg" alt="" width="512" height="384">
   <script type="text/javascript">
       var img = document.getElementById("img");
       var currentPos = 0;

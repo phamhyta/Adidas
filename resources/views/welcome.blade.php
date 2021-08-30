@@ -1,7 +1,7 @@
 @extends('layout.header')
 @section('content')
 {{-- slider --}}
-<div class="w-full h-90">
+<div class="w-full h-96">
     <img id="img" class="w-full h-full" src="https://giayhiendai.com/upload/hinhanh/slider-19801.jpg" alt="">
     <script type="text/javascript">
         var img = document.getElementById("img");
@@ -329,19 +329,19 @@
                                 <i class="far fa-heart"></i>
                                 <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
                             </div>
-                            <div class="bg-gray-700 flex justify-between">
-                                <ul>
+                            <div class="bg-gray-700 flex justify-between border-2">
+                                <ul class="">
                                     <li class="pt-4">
-                                        <div class="flex">
-                                        <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
-                                            <p id="h11">NIKE FAKE</p>
-                                        </h1>
-                                        <div id="gia1" class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
-                                            $90.00
-                                        </div>
-                                        <div id="giag1" class="text-sm font-semibold text-white pl-2 line-through mr-4"> <!-- Giá gốc -->
-                                            $110.00
-                                        </div>
+                                        <div class="flex border-2">
+                                            <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
+                                                <p id="h11">NIKE FAKE</p>
+                                            </h1>
+                                            <div id="gia1" class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
+                                                $90.00
+                                            </div>
+                                            <div id="giag1" class="text-sm font-semibold text-white pl-2 line-through relative float-left"> <!-- Giá gốc -->
+                                                $110.00
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="w-full text-sm font-medium text-white pb-4 pl-2">
