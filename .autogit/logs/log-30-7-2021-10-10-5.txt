@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Mon Aug 30 2021 10:10:05 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/layout/header.blade.php
+* resources/views/productContent.blade.php
+* resources/views/welcome.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-30-7-2021-9-39-53.txt
+
+
+Deleted files:
+
+
+Renamed files:

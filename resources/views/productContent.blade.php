@@ -1,6 +1,6 @@
 @extends('layout.header')
 @section('content')
-{{-- Quang cao --}}
+{{-- slider --}}
 <div class="w-full">
   <img id="img" class="w-full h-full object-contain" src="{{asset("img/voucher/voucher(1).jpg")}}" alt="" width="512" height="384">
   <script type="text/javascript">
@@ -19,144 +19,145 @@
       }
       setInterval(volgendefoto, 3000);
   </script>
-  </div>
+</div>
+<div class="px-32 py-5">
   <!-- Chon mau giay -->
   <div class="mx-5">
-      <div class="font-bold text-5xl font-medium pb-10">
-          Shoes selector
-      </div>
-      <div class="flex flex-row flex-wrap pr-5">
-          <img src="{{asset("img/nikadas_male_shoes_selector.png")}}" alt="" class="w-1/3 object-contain">
-          
-          <div class="bg-gray-300 w-4/6 pt-14">
-              <ul class="flex flex-wrap font-normal justify-center w-full">
-                  <li class=" w-1/3 p-5">
-                      <div class="inline-block relative w-full">
-                          <select class="block appearance-none w-full bg-gray-300 border-b-2 border-black px-4 py-2 pr-8 leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Category</option>
-                            <option>Football</option>
-                            <option>Tennis</option>
-                            <option>Basketball</option>
-                            <option>Running</option>
-                          </select>
-                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                          </div>
+    <div class="font-bold text-5xl font-medium pb-10">
+        Shoes selector
+    </div>
+    <div class="flex flex-row flex-wrap pr-5">
+        <img src="{{asset("img/nikadas_male_shoes_selector.png")}}" alt="" class="w-1/3 object-contain">
+        
+        <div class="bg-gray-300 w-4/6 pt-14">
+            <ul class="flex flex-wrap font-normal justify-center w-full">
+                <li class=" w-1/3 p-5">
+                    <div class="inline-block relative w-full">
+                        <select class="block appearance-none w-full bg-gray-300 border-b-2 border-black px-4 py-2 pr-8 leading-tight focus:outline-none focus:shadow-outline">
+                          <option>Category</option>
+                          <option>Football</option>
+                          <option>Tennis</option>
+                          <option>Basketball</option>
+                          <option>Running</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                         </div>
-                  </li>
-                  <li class=" w-1/3 p-5">
-                      <div class="inline-block relative w-full">
-                          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Size</option>
-                            <option>37</option>
-                            <option>39</option>
-                            <option>40</option>
-                            <option>41</option>
-                            <option>42</option>
-                          </select>
-                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                          </div>
+                      </div>
+                </li>
+                <li class=" w-1/3 p-5">
+                    <div class="inline-block relative w-full">
+                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                          <option>Size</option>
+                          <option>37</option>
+                          <option>39</option>
+                          <option>40</option>
+                          <option>41</option>
+                          <option>42</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                         </div>
-                  </li>
-                  <li class=" w-1/3 p-5">
-                      <div class="inline-block relative w-full">
-                          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Material</option>
-                            <option>Cotton</option>
-                            <option>Leather</option>
-                            <option>Nilon</option>
-                            <option>Plastic</option>
-                          </select>
-                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                          </div>
+                      </div>
+                </li>
+                <li class=" w-1/3 p-5">
+                    <div class="inline-block relative w-full">
+                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                          <option>Material</option>
+                          <option>Cotton</option>
+                          <option>Leather</option>
+                          <option>Nilon</option>
+                          <option>Plastic</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                         </div>
-                  </li>
-              </ul>
-              <ul class="flex flex-wrap font-normal justify-center">
-                  <li class=" w-1/3 p-5">
-                      <div class="inline-block relative w-full">
-                          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Price</option>
-                            <option>Low</option>
-                            <option>Expensive</option>
-                            <option>On sale</option>
-                          </select>
-                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                          </div>
+                      </div>
+                </li>
+            </ul>
+            <ul class="flex flex-wrap font-normal justify-center">
+                <li class=" w-1/3 p-5">
+                    <div class="inline-block relative w-full">
+                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                          <option>Price</option>
+                          <option>Low</option>
+                          <option>Expensive</option>
+                          <option>On sale</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                         </div>
-                  </li>
-                  <li class=" w-1/3 p-5">
-                      <div class="inline-block relative w-full">
-                          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Brand</option>
-                            <option>Nikadas Original</option>
-                            <option>Nikadas F1</option>
-                            <option>Bitis</option>
-                            <option>Thuong Dinh</option>
-                          </select>
-                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                          </div>
+                      </div>
+                </li>
+                <li class=" w-1/3 p-5">
+                    <div class="inline-block relative w-full">
+                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                          <option>Brand</option>
+                          <option>Nikadas Original</option>
+                          <option>Nikadas F1</option>
+                          <option>Bitis</option>
+                          <option>Thuong Dinh</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                         </div>
-                  </li>
-                  <li class=" w-1/3 p-5">
-                      <div class="inline-block relative w-full">
-                          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Surface</option>
-                            <option>Smooth</option>
-                            <option>Spike</option>
-                          </select>
-                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                          </div>
+                      </div>
+                </li>
+                <li class=" w-1/3 p-5">
+                    <div class="inline-block relative w-full">
+                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                          <option>Surface</option>
+                          <option>Smooth</option>
+                          <option>Spike</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                         </div>
-                  </li>
-              </ul>
-              <ul class="flex flex-wrap font-normal justify-center">
-                  <li class=" w-1/3 p-5">
-                      <div class="inline-block relative w-full">
-                          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Color</option>
-                            <option>Yellow</option>
-                            <option>Red</option>
-                            <option>Blue</option>
-                            <option>Black</option>
-                          </select>
-                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                          </div>
+                      </div>
+                </li>
+            </ul>
+            <ul class="flex flex-wrap font-normal justify-center">
+                <li class=" w-1/3 p-5">
+                    <div class="inline-block relative w-full">
+                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                          <option>Color</option>
+                          <option>Yellow</option>
+                          <option>Red</option>
+                          <option>Blue</option>
+                          <option>Black</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                         </div>
-                  </li>
-                  <li class=" w-1/3 p-5">
-                      <div class="inline-block relative w-full">
-                          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Shoes height</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                          </select>
-                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                          </div>
+                      </div>
+                </li>
+                <li class=" w-1/3 p-5">
+                    <div class="inline-block relative w-full">
+                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                          <option>Shoes height</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                         </div>
-                  </li>
-                  <li class=" w-1/3 p-5">
-                      <div class="inline-block relative w-full">
-                          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Athletes</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                          </select>
-                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                          </div>
+                      </div>
+                </li>
+                <li class=" w-1/3 p-5">
+                    <div class="inline-block relative w-full">
+                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                          <option>Athletes</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                         </div>
-                  </li>
-              </ul>
-          </div>
-      </div>
+                      </div>
+                </li>
+            </ul>
+        </div>
+    </div>
   </div>
   <!-- Chon mau giay -->
   <div class="mx-5 mt-16">
@@ -201,4 +202,5 @@
           </ul>
       </div>
   </div>
+</div>
 @endsection

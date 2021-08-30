@@ -614,9 +614,7 @@
     </div>
     </nav>
     {{-- Content --}}
-    <div class="px-32">
-        @yield('content')
-    </div>
+    @yield('content')
     {{-- footer --}}
     <footer class="bg-gray-800">
         <div class="container px-6 py-4 mx-auto">
