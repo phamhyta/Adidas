@@ -26,20 +26,48 @@
         <!--!!-->
         <div class="w-3/12">
             <!-- 3 ảnh (để chạy) mẫu khác của sản phẩm -->
-            <div>
-                <img id="image1" class="w-5/6  mt-4 mb-2 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(1).png")}}" alt="" width="512" height="384">
-            </div>
-            <div>
-                <img id="image2" class="w-5/6  mt-4 mb-2 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(6).png")}}" alt="" width="512" height="384">
-            </div>
-            <div> 
-                <img id="image3" class="w-5/6  mt-4 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(11).png")}}" alt="" width="512" height="384">
-            </div>
+            <button onclick="setImage1">
+                <div>
+                    <img id="image1" class="w-5/6  mt-4 mb-2 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(1).png")}}" alt="" width="512" height="384">
+                </div>
+            </button>
+            <button onclick="setImage2">
+                <div>
+                    <img id="image2" class="w-5/6  mt-4 mb-2 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(6).png")}}" alt="" width="512" height="384">
+                </div>
+            </button>
+            <button onclick="setImage3">
+                <div> 
+                    <img id="image3" class="w-5/6  mt-4 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(11).png")}}" alt="" width="512" height="384">
+                </div>
+            </button>
         </div>
         <!-- Ảnh to để ở giữa trang -->
         <div class="w-6/12">
-            <img class="pl-2 pt-28 h-5/6 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(16).png")}}" alt="">
+            <img id="image" class="pl-2 pt-28 h-5/6 object-contain" src="{{asset("img/anh_giay_nam/male_shoes(16).png")}}" alt="">
         </div>
+        <script>
+            var x = {{asset("img/anh_giay_nam/male_shoes(16).png")}};
+            var a = document.getElementById("image");
+            var b = document.getElementById("image1");
+            var c = document.getElementById("image2");
+            var d = document.getElementById("image3");
+            function setImage1() {
+                x = a.src;
+                a.src = b.src;
+                b.src=x;
+            }
+            function setImage2() {
+                x = a.src;
+                a.src = c.src;
+                c.src=x;
+            }
+            function setImage3() {
+                x = a.src;
+                a.src = d.src;
+                d.src=x;
+            }
+        </script>
         <!-- Phần thông tin sản phẩm -->
         <div class="w-4/12 pl-8">
             <form class="flex-auto">
@@ -61,7 +89,7 @@
                 <!-- Thanh chọn màu -->
                 <div class="flex items-baseline mt-4 mb-6">
                     <div class="px-2 flex">
-                        <input onclick="" class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
                         <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
                         <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
                         <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
