@@ -329,17 +329,17 @@
                                 <i class="far fa-heart"></i>
                                 <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
                             </div>
-                            <div class="bg-gray-700 flex justify-between border-2">
-                                <ul class="">
-                                    <li class="pt-4">
-                                        <div class="flex border-2">
+                            <div class="bg-gray-700 flex justify-between">
+                                <ul class="w-full">
+                                    <li class="pt-4 w-full">
+                                        <div class="flex">
                                             <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
-                                                <p id="h11">NIKE FAKE</p>
+                                                <p>NIKE FAKE</p>
                                             </h1>
-                                            <div id="gia1" class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
+                                            <div class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
                                                 $90.00
                                             </div>
-                                            <div id="giag1" class="text-sm font-semibold text-white pl-2 line-through relative float-left"> <!-- Giá gốc -->
+                                            <div class="text-sm font-semibold text-white pl-2 line-through relative float-left"> <!-- Giá gốc -->
                                                 $110.00
                                             </div>
                                         </div>
