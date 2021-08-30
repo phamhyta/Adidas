@@ -262,7 +262,7 @@
     </div>
     <div class="flex">
         <div class="w-1/4 h-80">
-            <img class="w-full flex items-center justify-center py-4 pr-4" src="{{asset("img/anh_giay_nam/male_shoes(25).jpg")}}" alt="">
+            <img class="w-full flex items-center justify-center py-4 pr-8" src="{{asset("img/anh_giay_nam/male_shoes(25).jpg")}}" alt="">
             <div class="flex flex-wrap">
                 <h1 class="flex-auto text-l font-semibold"> <!-- Tên sp -->
                     <p id="h11">NIKE FAKE</p>
@@ -281,7 +281,7 @@
             </div>
         </div>
         <div class="w-1/4 h-80">
-            <img class="w-full flex items-center justify-center py-4 pr-4" src="{{asset("img/anh_giay_nam/male_shoes(26).jpg")}}" alt="">
+            <img class="w-full flex items-center justify-center py-4 pr-8" src="{{asset("img/anh_giay_nam/male_shoes(26).jpg")}}" alt="">
             <div class="flex flex-wrap">
                 <h1 class="flex-auto text-l font-semibold"> <!-- Tên sp -->
                     ADIDAS
@@ -300,8 +300,8 @@
             </div>
         </div>
         <div class="w-1/4 h-80">
-            <img class="w-full flex items-center justify-center py-4 pr-4" src="{{asset("img/anh_giay_nam/male_shoes(35).jpg")}}" alt="">
-            <div class="flex flex-wrap bg-gray-300">
+            <img class="w-full flex items-center justify-center py-4 pr-8" src="{{asset("img/anh_giay_nam/male_shoes(35).jpg")}}" alt="">
+            <div class="flex flex-wrap">
                 <h1 class="flex-auto text-l font-semibold"> <!-- Tên sp -->
                     CONVER
                 </h1>
@@ -319,21 +319,23 @@
             </div>
         </div>
         <div class="w-1/4 h-80">
-            <img class="w-full h-72 flex items-center justify-center py-4" src="{{asset("img/anh_giay_nam/male_shoes(36).jpg")}}" alt="">
-            <div class="flex flex-wrap">
-                <h1 class="flex-auto text-l font-semibold"> <!-- Tên sp -->
-                    BALEN
-                </h1>
-                <div class="text-l font-semibold text-gray-700"> <!-- Giá sau khi giảm giá -->
-                    $160.00
-                </div>
-                <div class="text-sm font-semibold text-gray-500 pl-2 line-through"> <!-- Giá gốc -->
-                    $210.00
-                </div>
-                <div class="flex">
-                    <div id="mt1" class="w-full text-sm font-medium text-gray-700"> <!-- Mô tả ngắn -->
-                        Sản xuất thủ công
-                    </div>           
+            <img class="w-full h-64 flex items-center justify-center pt-4" src="{{asset("img/anh_giay_nam/male_shoes(36).jpg")}}" alt="">
+            <div class="bg-gray-50">
+                <div class="flex flex-wrap pt-4">
+                    <h1 class="flex-auto text-l font-semibold"> <!-- Tên sp -->
+                        BALEN
+                    </h1>
+                    <div class="text-l font-semibold text-gray-700"> <!-- Giá sau khi giảm giá -->
+                        $160.00
+                    </div>
+                    <div class="text-sm font-semibold text-gray-500 pl-2 line-through"> <!-- Giá gốc -->
+                        $210.00
+                    </div>
+                    <div class="flex">
+                        <div id="mt1" class="w-full text-sm font-medium text-gray-700"> <!-- Mô tả ngắn -->
+                            Sản xuất thủ công
+                        </div>           
+                    </div>
                 </div>
             </div>
         </div>
