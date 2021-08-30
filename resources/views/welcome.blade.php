@@ -59,51 +59,27 @@
                     </div>
                 </div>
                 <!-- Thanh chọn màu -->
-                <div class="items-baseline mt-4 mb-6">
-                    <div class="w-full pb-5">
-                        <div class="text-l font-medium text-gray-900 mt-2 mr-2 ">Color:</div>
-                    </div>
-                    <div>
-                        <div class="flex space-x-2">
-                            <label>
-                                <img class="w-36 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" alt="">
-                                <input class="w-5 h-5 flex items-center justify-center rounded-lg mt-2 ml-14" type="radio" name="color" value="">
-                                <p class="flex justify-center mr-2 text-sm">Xanh</p>
-                            </label>
-                                <label>
-                                <img class="w-36 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(227).jpg")}}" alt="">
-                                <input class="w-5 h-5 flex items-center justify-center rounded-lg mt-2 ml-14" type="radio" name="color" value="">
-                                <p class="flex justify-center mr-2 text-sm">Vàng</p>
-                            </label>
-                        </div>
-                        <div class="flex space-x-2">
-                            <label>
-                                <img class="w-36 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(216).jpg")}}" alt="">
-                                <input class="w-5 h-5 flex items-center justify-center rounded-lg mt-2 ml-14" type="radio" name="color" value=""> 
-                                <p class="flex justify-center mr-2 text-sm">Đen</p>
-                            </label>
-                            <label>
-                                <img class="w-36 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(222).jpg")}}" alt="">
-                                <input class="w-5 h-5 flex items-center justify-center rounded-lg mt-2 ml-14" type="radio" name="color" value=""> 
-                                <p class="flex justify-center mr-2 text-sm">Trắng</p>
-                            </label>
-                        </div>
+                <div class="flex items-baseline mt-4 mb-6">
+                    <div class="px-2 flex">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" value="">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" value="">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" value="">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" value="">
                     </div>
                 </div>
                 <!-- Thanh chọn size -->
-                <div class="flex items-baseline mt-4 mb-6">
-                    <div class="flex-none text-l font-medium text-gray-700 mt-2 mr-2 ">Size:</div>
-                    <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-1 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                <div class="flex items-baseline mt-4 mb-6 flex-wrap font-normal justify-center inline-block relative">
+                    <select class="block pl-12 appearance-none w-full bg-white border-b border-gray-400 hover:border-gray-700 px-4 py-1 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                         <option>37</option>
                         <option>39</option>
                         <option>40</option>
                         <option>41</option>
                         <option>42</option>
-                        <div class="flex pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                        </div>
                     </select>
-                    
+                    <div class="flex pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <div class="pr-60 text-black">Size:</div>
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
                 </div>
                 <!-- Thanh thêm vào giỏ hàng, mua ngay -->
                 <div class="mb-2 text-sm font-medium">
@@ -115,8 +91,22 @@
                     <div>
                         <button class="flex items-center justify-center w-full h-9 rounded-md text-red-600 border border-pink-900" type="button" aria-label="like">
                             <svg width="20" height="20" fill="currentColor">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                                <path id="btn" fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
                             </svg>
+                            <script>
+                                var count = 1;
+                                function setColor(btn, color) {
+                                    var property = document.getElementById(btn);
+                                    if (count == 0) {
+                                        property.style.backgroundColor = "#FFFFFF"
+                                        count = 1;        
+                                    }
+                                    else {
+                                        property.style.backgroundColor = "#7FFF00"
+                                        count = 0;
+                                    }
+                                }
+                            </script>
                         </button>
                     </div>
                 </div>
