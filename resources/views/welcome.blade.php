@@ -61,10 +61,10 @@
                 <!-- Thanh chọn màu -->
                 <div class="flex items-baseline mt-4 mb-6">
                     <div class="px-2 flex">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" value="">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" value="">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" value="">
-                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" value="">
+                        <input onclick="" class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
+                        <input class="w-1/4 p-1 flex items-center justify-center rounded-lg" src="{{asset("img/anh_giay_nam/male_shoes(218).jpg")}}" type="image" name="color" alt="Submit">
                     </div>
                 </div>
                 <!-- Thanh chọn size -->
@@ -87,27 +87,27 @@
                         <button class="w-full py-2 mb-2 items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
                         <button class="w-full py-2 mb-2 items-center justify-center rounded-md border border-gray-900" type="button">Add to bag</button>
                     </div>
-                    <!-- Nút thả tim -->
+                    <!-- Nút thêm vào yêu thích -->
                     <div>
-                        <button class="flex items-center justify-center w-full h-9 rounded-md text-red-600 border border-pink-900" type="button" aria-label="like">
+                        <button onclick="setColor()" id="btn" class="flex items-center justify-center w-full h-9 rounded-md text-gray-400 border border-pink-900 bg-gray-100" type="button" aria-label="like">
                             <svg width="20" height="20" fill="currentColor">
-                                <path id="btn" fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
                             </svg>
-                            <script>
-                                var count = 1;
-                                function setColor(btn, color) {
-                                    var property = document.getElementById(btn);
-                                    if (count == 0) {
-                                        property.style.backgroundColor = "#FFFFFF"
-                                        count = 1;        
-                                    }
-                                    else {
-                                        property.style.backgroundColor = "#7FFF00"
-                                        count = 0;
-                                    }
-                                }
-                            </script>
                         </button>
+                        <script>
+                            var count = 1;
+                            function setColor() {
+                                var property = document.getElementById("btn");
+                                if (count == 0) {
+                                    property.style.color = "gray" 
+                                    count = 1;        
+                                }
+                                else {
+                                    property.style.color = "red"
+                                    count = 0;
+                                }
+                            }
+                        </script>
                     </div>
                 </div>
             </form>
