@@ -2,18 +2,15 @@
 @section('content')
 {{-- slider --}}
 <div class="w-full">
-    <img id="img" class="w-full h-full object-contain" src="{{asset("img/voucher/voucher(1).jpg")}}" alt="" width="512" height="384">
+    <img id="img" class="w-full h-96 object-contain" src="https://giayhiendai.com/upload/hinhanh/slider-19801.jpg" alt="" width="512" height="384">
     <script type="text/javascript">
         var img = document.getElementById("img");
         var currentPos = 0;
-        var imgs = ["{{asset("img/voucher/voucher(1).jpg")}}",
-        "{{asset("img/voucher/voucher(2).jpg")}}",
-        "{{asset("img/voucher/voucher(4).jpg")}}",
-        "{{asset("img/voucher/voucher(5).jpg")}}",
-        "{{asset("img/voucher/voucher(6).jpg")}}",];
+        var imgs = ["https://giayhiendai.com/upload/hinhanh/slider-19801.jpg","https://htstore87.com/wp-content/uploads/2021/04/slider_2.png",
+        ];
         function volgendefoto()
         {
-            if(++currentPos > 4)
+            if(++currentPos > 1)
                 currentPos = 0;
             img.src = imgs[currentPos];
         }
@@ -142,32 +139,33 @@
         </div>
     </div>
     <!-- Phần đánh giá, mô tả -->
-    <div class="pt-10">
+    <div class="pt-10 border-t-2">
         <div class="flex">
             <div class="w-1/2">
-                <img class="" src="{{asset("img/anh_giay_nam/male_shoes(21).png")}}">
+                <img class="" src="https://giaynamvip.com/upload/product/gnk103/giay-boot-nam-co-cao-da-bo-that-chat-choi-5.jpg">
             </div>
             <div class="w-1/2">
-                <div class="pl-5">
-                    <div>
-                        <h1 class="text-3xl font-semibold float-left"> GIÀY STAN SMITH
-                            STAN SMITH, MÃI MÃI. ĐẬM CHẤT BIỂU TƯỢNG. GIỜ ĐÂY CÀNG BỀN VỮNG HƠN.
-                            </h1>
+                <div class="pl-8">
+                    <div class="text-3xl font-semibold float-left pb-16">
+                        <p>GIÀY STAN SMITH <br></p>
+                        <p>STAN SMITH, MÃI MÃI. ĐẬM CHẤT BIỂU TƯỢNG. GIỜ ĐÂY CÀNG BỀN VỮNG HƠN.</p>   
                     </div>
-                    <div>
-                        <h3 class="text-sm font-semibold float-rights w-full">
+                    <div class="text-sm font-semibold float-rights w-full text-gray-500">
                             Vẻ đẹp kinh điển. Phong cách vốn dĩ. Đa năng hàng ngày. 
                             Suốt hơn 50 năm qua và chưa dừng ở đó, giày adidas Stan Smith luôn giữ vững vị trí là một biểu tượng. 
                             Đôi giày này là phiên bản cải biên mới mẻ, thể hiện cam kết của adidas hướng tới chỉ sử dụng polyester tái chế bắt đầu từ năm 2024. 
                             Thêm vào đó, đế ngoài làm từ cao su phế liệu càng tôn lên phong cách kinh điển.   
                             Sản phẩm này may bằng vải công nghệ Primegreen, thuộc dòng chất liệu tái chế hiệu năng cao. 
                             Thân giày chứa 50% thành phần tái chế. Không sử dụng polyester nguyên sinh.
-                        </h3>
                     </div>
                 </div>
-                <div class="pt-20 pl-5">
-                    <div class="h-1/6 w-1/3 pr-4 text-xl font-medium text-gray-700 ml-48 border-b-2 text-center border-gray-500">
-                        Thông số
+            </div>
+        </div>
+        <div class="flex">
+            <div class="w-1/2">
+                <div class="pt-4 pb-6 border-b-2 border-gray-50">
+                    <div class="text-xl font-medium text-gray-700">
+                        Thông số:
                     </div>
                     <div class="flex">
                         <div class="h-full w-1/2 ml-4 list-inside">
@@ -182,11 +180,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="flex">
-            <div class="w-1/2">
-                <div class="flex mr-2 mt-4">
+                <div class="flex mr-2 mt-6">
                     <div class="text-xl font-medium text-gray-700 w-2/3">
                         Xếp hạng và đánh giá
                     </div>
@@ -274,30 +268,11 @@
                 <p class="">Sản phẩm nên mua</p>
             </div>
             <div class="w-1/2 float-left">
-                <img class="" src="{{asset("img/anh_giay_nam/male_shoes(21).png")}}">
+                <img class="" src="https://cf.shopee.vn/file/6428eb140b43d0904b6466cdd81489e1">
             </div>
         </div>
     </div>
-    <div class="flex justify-between w-full h-96 mt-8 border-t-2 border-gray-300">
-        <div class="w-1/3 h-full mt-6 ml-4 border-r-2 border-gray-300">
-        </div>
-        <div class="w-2/3 h-full mt-4">
-            <div class="flex h-1/2 w-full">
-                <div class="h-full w-1/3"> <!-- Để ảnh sp -->
-                    <img class="w-5/6 h-full float-right" src="{{asset("img/anh_giay_nam/male_shoes(20).png")}}">
-                </div>
-                
-            </div>
-            <div class="flex h-1/2 w-full">
-                <!-- Phần thông số sản phẩm -->
-                
-                <div class="h-full w-1/3"> <!-- Để ảnh sp -->
-                    <img class="w-5/6 h-full float-right mr-12" src="{{asset("img/anh_giay_nam/male_shoes(21).png")}}">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Đề xuất mua sắm -->
+    {{-- YOU MIGHT LIKE --}}
     <div class="relative w-full mt-12">
         <div class="flex justify-center text-xl font-semibold border-b-2">
             YOU MIGHT LIKE
