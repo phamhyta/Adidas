@@ -18,7 +18,9 @@
     </script>
 </div>
 <div class="flex px-32 py-12">
+    {{-- Thong tin --}}
     <div class="w-3/4 pr-32">
+        {{-- Delivery --}}
         <div class="w-full">
             <div class="py-3 pl-10 bg-black text-2xl text-white">
                 Delivery
@@ -60,6 +62,7 @@
                 <input type="text" class="w-full border-b-2 border-gray-500 outline-none" placeholder="Phone number">
             </div>
         </div>
+        {{-- Payment --}}
         <div class="w-full pt-12">
             <div class="py-3 pl-10 bg-black text-2xl text-white">
                 Payment
@@ -72,15 +75,20 @@
                 <div class="pr-6 flex w-1/2">
                     <div class="w-2/3">Credit or Debit card</div>
                     <div class="w-1/3 text-right">
-                        <input type="checkbox">
+                        <input id="check1" onclick="" type="checkbox" value="payment">
                     </div>
                 </div>
                 <div class="pl-6 flex w-1/2">
                     <div class="w-2/3">Paypal</div>
                     <div class="w-1/3 text-right">
-                        <input type="checkbox">
+                        <input id="check2" onclick="" type="checkbox" value="payment">
                     </div>
                 </div>
+                <script>
+                    function checked1(){
+
+                    }
+                </script>
             </div>
             <div class="h-32 pl-10">
                 <div class="bg-purple-100 h-full">
@@ -113,6 +121,7 @@
                 </div>
             </div> 
         </div>
+        {{-- Write your felling --}}
         <div class="w-full pt-12">
             <div class="py-3 pl-10 bg-black text-2xl text-white">
                 Write your felling
@@ -120,37 +129,85 @@
             <div class="pl-10 pt-4">Rate us</div>
             <div class="pl-10 flex">
                 <div>
-                    <svg width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
-                            <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
-                        </svg>
+                    <svg onclick="color1()" id="sao1" width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
+                        <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
+                    </svg>
                 </div>
                 <div>
-                    <svg width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
-                            <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
-                        </svg>
+                    <svg onclick="color2()" id="sao2" width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
+                        <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
+                    </svg>
                 </div>
                 <div>
-                    <svg width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
-                            <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
-                        </svg>
+                    <svg onclick="color3()" id="sao3" width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
+                        <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
+                    </svg>
                 </div>
                 <div>
-                    <svg width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
-                            <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
-                        </svg>
+                    <svg onclick="color4()" id="sao4" width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
+                        <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
+                    </svg>
                 </div>
                 <div>
-                    <svg width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
-                            <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
-                        </svg>
+                    <svg onclick="color5()" id="sao5" width="30" height="30" fill="currentColor" class="text-gray-600 mr-0">
+                        <path d="M9.05 3.691c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.372 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.363-1.118l-2.8-2.034c-.784-.57-.381-1.81.587-1.81H7.03a1 1 0 00.95-.69L9.05 3.69z" />
+                    </svg>
                 </div>
             </div>
+            <script>
+                sao1 = document.getElementById("sao1");
+                sao2 = document.getElementById("sao2");
+                sao3 = document.getElementById("sao3");
+                sao4 = document.getElementById("sao4");
+                sao5 = document.getElementById("sao5");
+                function color1()
+                {
+                    sao1.style.color = "orange";
+                    sao2.style.color = "gray";
+                    sao3.style.color = "gray"; 
+                    sao4.style.color = "gray"; 
+                    sao5.style.color = "gray"; 
+                }
+                function color2()
+                {
+                    sao1.style.color = "orange";
+                    sao2.style.color = "orange";
+                    sao3.style.color = "gray"; 
+                    sao4.style.color = "gray"; 
+                    sao5.style.color = "gray"; 
+                }
+                function color3()
+                {
+                    sao1.style.color = "orange";
+                    sao2.style.color = "orange";
+                    sao3.style.color = "orange"; 
+                    sao4.style.color = "gray"; 
+                    sao5.style.color = "gray"; 
+                }
+                function color4()
+                {
+                    sao1.style.color = "orange";
+                    sao2.style.color = "orange";
+                    sao3.style.color = "orange"; 
+                    sao4.style.color = "orange"; 
+                    sao5.style.color = "gray"; 
+                }
+                function color5()
+                {
+                    sao1.style.color = "orange";
+                    sao2.style.color = "orange";
+                    sao3.style.color = "orange"; 
+                    sao4.style.color = "orange"; 
+                    sao5.style.color = "orange"; 
+                }
+            </script>
             <div class="pl-10 pt-2">Comment</div>
             <div class="pl-10">
                 <input type="text" class="border-2 outline-none w-full h-12">
             </div>
         </div>
     </div>
+    {{-- Tong tien --}}
     <div class="w-1/4 bg-purple-100 px-10">
         <div class="pt-6">ORDER SUMARY</div>
         <div class="flex pt-6">
