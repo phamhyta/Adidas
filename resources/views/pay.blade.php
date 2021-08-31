@@ -75,20 +75,15 @@
                 <div class="pr-6 flex w-1/2">
                     <div class="w-2/3">Credit or Debit card</div>
                     <div class="w-1/3 text-right">
-                        <input id="check1" onclick="" type="checkbox" value="payment">
+                        <input type="radio" name="check">
                     </div>
                 </div>
                 <div class="pl-6 flex w-1/2">
                     <div class="w-2/3">Paypal</div>
                     <div class="w-1/3 text-right">
-                        <input id="check2" onclick="" type="checkbox" value="payment">
+                        <input type="radio" name="check">
                     </div>
                 </div>
-                <script>
-                    function checked1(){
-
-                    }
-                </script>
             </div>
             <div class="h-32 pl-10">
                 <div class="bg-purple-100 h-full">
