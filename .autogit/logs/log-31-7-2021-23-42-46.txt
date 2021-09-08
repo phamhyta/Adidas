@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Tue Aug 31 2021 23:42:46 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/loginAdmin.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-31-7-2021-23-12-17.txt
+* public/img/avatar.png
+
+
+Deleted files:
+
+
+Renamed files:
