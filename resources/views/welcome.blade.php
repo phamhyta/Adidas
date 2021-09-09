@@ -108,11 +108,17 @@
     </div>
     <div class="flex h-96 mt-16">
         <div class="w-1/2 mr-4">
-            <img class="w-full h-full object-contain" src="https://i.pinimg.com/originals/48/a3/9c/48a39ca9981f75827f30e2350f5c0fae.jpg" alt="">
-        </div>
+            <div class="h-1/12"></div>
+            <div class="h-11/12">
+                <img class="w-full h-full" src="https://i.pinimg.com/originals/f8/7e/d7/f87ed75ded432af35b9ae10df6f703d7.jpg" alt="">
+            </div>
+            </div>
         <div class="w-1/2 ml-4">
-            <img class="w-full h-full object-contain" src="https://toplist.vn/images/800px/bap-house-shop-681351.jpg" alt="">
-        </div>
+            <div class="h-1/12"></div>
+            <div class="h-11/12">
+                <img class="w-full h-full" src="https://toplist.vn/images/800px/bap-house-shop-681351.jpg" alt="">
+            </div>
+         </div>
     </div>
     <div class="relative w-full mt-16">
         <div class="flex text-xl font-semibold border-b-2">
