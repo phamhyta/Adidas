@@ -26,7 +26,7 @@
                     OUR SUMMER COLECTION
                 </div>
                 <div class="mt-4">
-                    <button class="bg-white text-black py-2 px-4 hover:bg-gray-50">Discover</button>
+                    <button class="bg-white text-black py-2 px-4 hover:bg-gray-100">Discover</button>
                 </div>
             </div>
         </div>
@@ -36,32 +36,32 @@
                     MORE BASKETBALL SHOSE
                 </div>
                 <div class="mt-4">
-                    <button class="bg-white text-black py-2 px-4 hover:bg-gray-50">Discover</button>
+                    <button class="bg-white text-black py-2 px-4 hover:bg-gray-100">Discover</button>
                 </div>
             </div>
             <div class="w-1/2"></div>    
         </div>
     </div>
-    <div class="h-80 flex mt-24">
-        <div class="w-1/2 mr-4 bg-center bg-auto bg-no-repeat" style="background-image: url(https://vn-test-11.slatic.net/original/f0f9140886486c429c6d845312689fd0.jpg_720x720q80.jpg_.webp)">
+    <div class="h-80 flex mt-32">
+        <div class="w-1/2 mr-4 bg-center bg-auto bg-no-repeat" style="background-image: url(https://nhiet.vn/wp-content/uploads/2018/06/shop-gi%C3%A0y-replica-H%C3%A0-N%E1%BB%99i-b%E1%BB%81n-%C4%91%E1%BA%B9p.png)">
             <div class="h-2/3"></div>
-            <div class="w-full text-center px-4 h-1/3">
+            <div class="w-full text-center px-40 h-1/3">
                 <div class="bg-white text-black">
-                    OUR SUMMER COLECTION
+                    MEN SHOES
                 </div>
                 <div class="mt-4">
-                    <button class="bg-black text-white py-2 px-4 hover:bg-gray-50">Discover</button>
+                    <button class="bg-black text-white py-2 px-4 hover:bg-gray-900">Discover</button>
                 </div>
             </div>
         </div>
-        <div class="w-1/2 ml-4 bg-center bg-auto bg-no-repeat" style="background-image: url(https://fsport247.com/wp-content/uploads/2021/03/cac-hang-giay-noi-tieng-5.jpg)">
+        <div class="w-1/2 ml-4 bg-center bg-auto bg-no-repeat" style="background-image: url(https://biquyetcongai.com/wp-content/uploads/2019/01/giay-ananas-1.jpg)">
             <div class="h-2/3"></div>
-            <div class="w-full text-center px-4 h-1/3">
+            <div class="w-full text-center px-40 h-1/3">
                 <div class="bg-white text-black">
-                    MORE BASKETBALL SHOSE
+                    WOMAN SHOSE
                 </div>
                 <div class="mt-4">
-                    <button class="bg-black text-white py-2 px-4 hover:bg-gray-50">Discover</button>
+                    <button class="bg-black text-white py-2 px-4 hover:bg-gray-900">Discover</button>
                 </div>
             </div> 
         </div>
@@ -107,8 +107,12 @@
         </div>
     </div>
     <div class="flex h-96 mt-16">
-        <div class="w-1/2 mr-1 border-2"></div>
-        <div class="w-1/2 ml-1 border-2"></div>
+        <div class="w-1/2 mr-4">
+            <img class="w-full h-full object-contain" src="https://i.pinimg.com/originals/48/a3/9c/48a39ca9981f75827f30e2350f5c0fae.jpg" alt="">
+        </div>
+        <div class="w-1/2 ml-4">
+            <img class="w-full h-full object-contain" src="https://toplist.vn/images/800px/bap-house-shop-681351.jpg" alt="">
+        </div>
     </div>
     <div class="relative w-full mt-16">
         <div class="flex text-xl font-semibold border-b-2">
