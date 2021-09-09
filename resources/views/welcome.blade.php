@@ -18,17 +18,53 @@
     </script>
 </div>
 <div class="px-32 py-2">
-    <div class="h-80 flex">
-        <div class="w-1/2 border-2 mr-4">
-        <img class="object-contain w-full h-full" src="https://vn-test-11.slatic.net/original/f0f9140886486c429c6d845312689fd0.jpg_720x720q80.jpg_.webp" alt="">
+    <div class="h-80 flex mt-16">
+        <div class="w-1/2 flex mr-4 bg-center bg-auto bg-no-repeat" style="background-image: url(https://vn-test-11.slatic.net/original/f0f9140886486c429c6d845312689fd0.jpg_720x720q80.jpg_.webp)">
+            <div class="w-1/2"></div>
+            <div class="w-1/2 text-center px-4">
+                <div class="bg-black text-white mt-8">
+                    OUR SUMMER COLECTION
+                </div>
+                <div class="mt-4">
+                    <button class="bg-white text-black py-2 px-4 hover:bg-gray-50">Discover</button>
+                </div>
+            </div>
         </div>
-        <div class="w-1/2 ml-4 border-2">
-        <img class="object-contain w-full h-full" src="https://fsport247.com/wp-content/uploads/2021/03/cac-hang-giay-noi-tieng-5.jpg" alt="">
+        <div class="w-1/2 flex ml-4 bg-center bg-auto bg-no-repeat" style="background-image: url(https://fsport247.com/wp-content/uploads/2021/03/cac-hang-giay-noi-tieng-5.jpg)">
+            <div class="w-1/2 text-center px-4">
+                <div class="bg-black text-white mt-8">
+                    MORE BASKETBALL SHOSE
+                </div>
+                <div class="mt-4">
+                    <button class="bg-white text-black py-2 px-4 hover:bg-gray-50">Discover</button>
+                </div>
+            </div>
+            <div class="w-1/2"></div>    
         </div>
     </div>
     <div class="h-80 flex mt-24">
-        <div class="w-1/2 border-2 mr-4"></div>
-        <div class="w-1/2 ml-4 border-2"></div>
+        <div class="w-1/2 mr-4 bg-center bg-auto bg-no-repeat" style="background-image: url(https://vn-test-11.slatic.net/original/f0f9140886486c429c6d845312689fd0.jpg_720x720q80.jpg_.webp)">
+            <div class="h-2/3"></div>
+            <div class="w-full text-center px-4 h-1/3">
+                <div class="bg-white text-black">
+                    OUR SUMMER COLECTION
+                </div>
+                <div class="mt-4">
+                    <button class="bg-black text-white py-2 px-4 hover:bg-gray-50">Discover</button>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 ml-4 bg-center bg-auto bg-no-repeat" style="background-image: url(https://fsport247.com/wp-content/uploads/2021/03/cac-hang-giay-noi-tieng-5.jpg)">
+            <div class="h-2/3"></div>
+            <div class="w-full text-center px-4 h-1/3">
+                <div class="bg-white text-black">
+                    MORE BASKETBALL SHOSE
+                </div>
+                <div class="mt-4">
+                    <button class="bg-black text-white py-2 px-4 hover:bg-gray-50">Discover</button>
+                </div>
+            </div> 
+        </div>
     </div>
     <div class="relative w-full mt-16">
         <div class="flex justify-center text-xl font-semibold border-b-2">
