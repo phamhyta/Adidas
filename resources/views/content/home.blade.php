@@ -60,7 +60,7 @@
             <ul class="splide__list">
                 <?php
                     echo "Run here!";
-                    for($i = 1; $i <= 4; $i++){
+                    for($i = 1; $i <= 8; $i++){
                         echo '<li class="splide__slide px-5">
                                 <div>
                                     <div>
@@ -156,14 +156,14 @@
 
     document.addEventListener( 'DOMContentLoaded', function () {
 		new Splide( '#productSlide',{
-            perPage: 3,
+            perPage: 4,
 	        rewind : true,
         } ).mount();
 	} );
 
     document.addEventListener( 'DOMContentLoaded', function () {
 		new Splide( '#nikadas-new',{
-            perPage: 3,
+            perPage: 4,
 	        rewind : true,
         } ).mount();
 	} );

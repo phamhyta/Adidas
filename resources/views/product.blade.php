@@ -30,7 +30,7 @@
             </button>
             <button onclick="setImage2()">
                 <div>
-                    <img id="image2" class="w-5/6  mt-4 mb-2 object-contain" src="https://cf.shopee.vn/file/bcdc85ba64bcde7041321b1b04de30a3" alt="" width="512" height="384">
+                    <img id="image2" class="w-5/6  mt-4 mb-2 object-contain" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" alt="" width="512" height="384">
                 </div>
             </button>
             <button onclick="setImage3()">
@@ -44,25 +44,18 @@
             <img id="image" class="pl-2 pt-28 h-5/6 object-contain" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" alt="">
         </div>
         <script>
-            var x1 = "https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg";
             var a1 = document.getElementById("image");
             var b1 = document.getElementById("image1");
             var c1 = document.getElementById("image2");
             var d1 = document.getElementById("image3");
             function setImage1() {
-                x1 = a1.src;
                 a1.src = b1.src;
-                b1.src = x1;
             }
             function setImage2() {
-                x1 = a1.src;
                 a1.src = c1.src;
-                c1.src = x1;
             }
             function setImage3() {
-                x1 = a1.src;
                 a1.src = d1.src;
-                d1.src = x1;
             }
         </script>
         <!-- Phần thông tin sản phẩm -->
@@ -87,17 +80,14 @@
                 <div class="flex items-baseline mt-4 mb-6">
                     <div class="px-2 flex">                        
                         <button type="button">
-                            <img id="color1" onclick="setColor1()" class="object-contain h-20 px-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-trainers-den-bac-nam-nu.jpg" alt="">
+                            <img id="color1" onclick="setColor1()" class="object-contain h-20 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-trainers-den-bac-nam-nu.jpg" alt="">
                         </button>
                         <button type="button">
-                            <img id="color2" onclick="setColor2()" class="object-contain h-20 px-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" alt="">
+                            <img id="color2" onclick="setColor2()" class="object-contain h-20 p-1 flex items-center justify-center rounded-lg" src="https://giaygiare.vn/upload/sanpham/large/balenciaga-triple-s-red-black-nam-nu.jpg" alt="">
                         </button>
                         <button type="button">
-                            <img id="color3" onclick="setColor3()" class="object-contain h-20 px-1 flex items-center justify-center rounded-lg" src="https://cdn.under.vn/wp-content/uploads/2020/03/balenciaga-triple-s-vang-xanh-replica-11-1.jpg" alt="">
-                        </button>
-                        <button type="button">
-                            <img id="color4" onclick="setColor4()" class="object-contain h-20 px-1 flex items-center justify-center rounded-lg" src="https://cf.shopee.vn/file/bcdc85ba64bcde7041321b1b04de30a3" alt="">
-                        </button>                  
+                            <img id="color3" onclick="setColor3()" class="object-contain h-20 p-1 flex items-center justify-center rounded-lg" src="https://cdn.under.vn/wp-content/uploads/2020/03/balenciaga-triple-s-vang-xanh-replica-11-1.jpg" alt="">
+                        </button>                 
                     </div>
                 </div>
                 <script>
@@ -136,7 +126,8 @@
                 </script>
                 <!-- Thanh chọn size -->
                 <div class="flex items-baseline mt-4 mb-6 flex-wrap font-normal justify-center inline-block relative">
-                    <select class="block pl-12 appearance-none w-full bg-white border-b border-gray-400 hover:border-gray-700 px-4 py-1 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <select class="block pl-2 appearance-none w-full bg-white border-b border-gray-400 hover:border-gray-700 py-1 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                        <option>Size:</option>
                         <option>37</option>
                         <option>39</option>
                         <option>40</option>
@@ -144,7 +135,7 @@
                         <option>42</option>
                     </select>
                     <div class="flex pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                        <div class="pr-60 text-black">Size:</div>
+                        
                         <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                     </div>
                 </div>
@@ -326,7 +317,6 @@
                     echo '<li class="my-5 pr-5 ml-0 w-1/4">
                         <div>
                             <div>
-                                <i class="far fa-heart"></i>
                                 <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
                             </div>
                             <div class="bg-gray-700 flex justify-between">
@@ -339,7 +329,7 @@
                                             <div class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
                                                 $90.00
                                             </div>
-                                            <div class="text-sm font-semibold text-white pl-2 line-through relative float-left"> <!-- Giá gốc -->
+                                            <div class="text-sm font-semibold text-white pl-2 pr-2 line-through relative float-left"> <!-- Giá gốc -->
                                                 $110.00
                                             </div>
                                         </div>
