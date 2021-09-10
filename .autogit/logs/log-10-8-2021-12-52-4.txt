@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 10 2021 12:52:04 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/content/home.blade.php
+* routes/web.php
+* tailwind.config.js
+
+
+Created files:
+* .autogit/logs/log-10-8-2021-12-21-38.txt
+
+
+Deleted files:
+
+
+Renamed files:

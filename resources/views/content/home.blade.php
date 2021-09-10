@@ -112,7 +112,7 @@
             <?php
                 for($i = 1; $i <= 8; $i++){
                     echo '<li class="splide__slide px-5">
-                        <div class="transform motion-safe hover:scale-110...">
+                        <div>
                             <div>
                                 <img src="img/nikadas-new-'.$i.'.jpeg" alt="" class="mb-2">
                                 <div class="flex flex-row justify-center absolute left-0 right-0 mx-auto">

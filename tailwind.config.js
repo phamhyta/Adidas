@@ -12,7 +12,6 @@ module.exports = {
         extend: {
             display: ['group-focus', 'group-hover'],
             margin: ["group-hover"],
-            animation: ['motion-safe'],
             visibility: ["group-hover"]
         },
     },
