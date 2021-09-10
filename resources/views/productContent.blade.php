@@ -168,7 +168,6 @@
                       echo '<li class="my-5 pr-5 ml-0 w-1/4">
                         <div>
                             <div>
-                                <i class="far fa-heart"></i>
                                 <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
                             </div>
                             <div class="bg-gray-700 flex justify-between w-full">
@@ -181,7 +180,7 @@
                                       <div class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
                                           $90.00
                                       </div>
-                                      <div class="text-sm font-semibold text-white pl-2 line-through relative float-left"> <!-- Giá gốc -->
+                                      <div class="text-sm font-semibold text-white pl-2 pr-2 line-through relative float-left"> <!-- Giá gốc -->
                                           $110.00
                                       </div>
                                   </div>

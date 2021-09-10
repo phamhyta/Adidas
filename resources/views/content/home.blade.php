@@ -61,10 +61,9 @@
                 <?php
                     echo "Run here!";
                     for($i = 1; $i <= 8; $i++){
-                        echo '<li class="splide__slide px-5">
+                        echo '<li class="splide__slide p-2">
                                 <div>
                                     <div>
-                                        <i class="far fa-heart"></i>
                                         <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
                                         </div>
                                         <div class="bg-gray-700 flex justify-between w-full">

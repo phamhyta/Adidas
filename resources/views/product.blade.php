@@ -306,44 +306,66 @@
         </div>
     </div>
     {{-- YOU MIGHT LIKE --}}
-    <div class="relative w-full mt-12">
-        <div class="flex justify-center text-xl font-semibold border-b-2">
-            YOU MIGHT LIKE
+    <div class="pt-20">
+        <div class="flex justify-center mb-2">
+            <div class="mx-10 border-b-2 border-yellow-500 text-yellow-500">BEST SELLER</div>
+            <div class="mx-10">SALES</div>
         </div>
-        <div class="flex justify-between">
-            <ul class="flex flex-wrap font-normal w-full ">
-                <?php
-                    for($i = 1; $i <= 4; $i++){
-                    echo '<li class="my-5 pr-5 ml-0 w-1/4">
-                        <div>
-                            <div>
-                                <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
-                            </div>
-                            <div class="bg-gray-700 flex justify-between">
-                                <ul class="w-full">
-                                    <li class="pt-4 w-full">
-                                        <div class="flex">
-                                            <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
-                                                <p>NIKE FAKE</p>
-                                            </h1>
-                                            <div class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
-                                                $90.00
+        <div class="splide" id="productSlide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <?php
+                        echo "Run here!";
+                        for($i = 1; $i <= 8; $i++){
+                            echo '<li class="splide__slide p-2">
+                                    <div>
+                                        <div>
+                                            <img src="'.asset("img/anh_giay_nam/male_shoes($i).png").'" alt="male shoes" class="w-full object-contain">
                                             </div>
-                                            <div class="text-sm font-semibold text-white pl-2 pr-2 line-through relative float-left"> <!-- Giá gốc -->
-                                                $110.00
-                                            </div>
+                                            <div class="bg-gray-700 flex justify-between w-full">
+                                            <ul class="w-full">
+                                                <li class="pt-4 w-full">
+                                                    <div class="flex">
+                                                        <h1 class="flex-auto text-l font-semibold text-white pl-2"> <!-- Tên sp -->
+                                                            <p>NIKE FAKE</p>
+                                                        </h1>
+                                                        <div class="text-l font-semibold text-white pl-8"> <!-- Giá sau khi giảm giá -->
+                                                            $90.00
+                                                        </div>
+                                                        <div class="text-sm font-semibold text-white pl-2 pr-2 line-through relative float-left"> <!-- Giá gốc -->
+                                                            $110.00
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="w-full text-sm font-medium text-white pb-4 pl-2">
+                                                    Sản phẩm không chính hãng
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </li>
-                                    <li class="w-full text-sm font-medium text-white pb-4 pl-2">
-                                        Sản phẩm không chính hãng
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>';}    
-                ?> 
-            </ul>
+                                    </div>                      
+                                </li>';
+                        }
+                    ?>
+                </ul>
+            </div>
         </div>
     </div>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#productSlide',{
+                perPage: 4,
+                rewind : true,
+            } ).mount();
+        } );
+    
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#nikadas-new',{
+                perPage: 4,
+                rewind : true,
+            } ).mount();
+        } );
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </div>
 @endsection
