@@ -19,8 +19,9 @@ use Illuminate\Support\Facades\Route;
 // });
 //frontend
 Route::get('/', [HomeController::class, 'index']);
-// Route::get('/home', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
 
 //backend
 Route::get('/login', [AdminController::class, 'index']);
-Route::get('/dashboard', [AdminController::class, 'dashboard']);
+Route::get('/dashboard', [AdminController::class, 'show_dashboard']);
+Route::post('/dashboard', [AdminController::class, 'dashboard']);
