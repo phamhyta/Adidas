@@ -23,3 +23,4 @@ Route::get('/', [HomeController::class, 'index']);
 
 //backend
 Route::get('/login', [AdminController::class, 'index']);
+Route::get('/dastboard', [AdminController::class, 'dastboard']);

@@ -1,0 +1,68 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 10 2021 23:12:19 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/AdminController.php
+* app/Http/Controllers/HomeController.php
+* resources/views/admin/login.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-10-8-2021-22-42-13.txt
+* public/backend/fonts/FontAwesome.otf
+* public/backend/fonts/fontawesome-webfont.eot
+* public/backend/fonts/fontawesome-webfont.svg
+* public/backend/fonts/fontawesome-webfont.ttf
+* public/backend/fonts/fontawesome-webfont.woff
+* public/backend/fonts/fontawesome-webfont.woff2
+* public/backend/fonts/glyphicons-halflings-regular.woff
+* public/backend/fonts/glyphicons-halflings-regular.woff2
+* public/backend/image/1.png
+* public/backend/image/2.png
+* public/backend/image/3.png
+* public/backend/image/bg.jpg
+* public/backend/image/close.png
+* public/backend/image/g1.jpg
+* public/backend/image/g2.jpg
+* public/backend/image/g3.jpg
+* public/backend/image/g4.jpg
+* public/backend/image/g5.jpg
+* public/backend/image/g6.jpg
+* public/backend/image/g7.jpg
+* public/backend/image/g8.jpg
+* public/backend/image/g9.jpg
+* public/backend/image/mail.png
+* public/backend/image/minimal.png
+* public/backend/image/nav-expand.png
+* public/backend/image/next.png
+* public/backend/image/pass.png
+* public/backend/image/prev.png
+* public/backend/image/search-icon.png
+* public/backend/js/bootstrap.js
+* public/backend/js/jquery.dcjqaccordion.2.7.js
+* public/backend/js/jquery.fileupload.js
+* public/backend/js/jquery.min.js
+* public/backend/js/jquery.nicescroll.js
+* public/backend/js/jquery.scrollTo.js
+* public/backend/js/jquery.slimscroll.js
+* public/backend/js/jquery.vmap.asia.js
+* public/backend/js/jquery.vmap.australia.js
+* public/backend/js/jquery.vmap.europe.js
+* public/backend/js/jquery.vmap.js
+* public/backend/js/jquery.vmap.sampledata.js
+* public/backend/js/jquery.vmap.world.js
+* public/backend/js/jquery2.0.3.min.js
+* public/backend/js/lightbox-plus-jquery.min.js
+* public/backend/js/monthly.js
+* public/backend/js/morris.js
+* public/backend/js/raphael-min.js
+* public/backend/js/script.js
+* public/backend/js/scripts.js
+
+
+Deleted files:
+
+
+Renamed files:
