@@ -25,11 +25,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="w3layouts-main">
 	<h2>Đăng nhập</h2>
 	<?php
-		//$message = $request->session()->get('message', 'default');
-		$message = session::get('message');
+		$message = Session::get('message');
 		if($message){
 		echo $message;
-		// $request->session()->put('message', null);
 		session::put('message', null);
 	}
 	?>
