@@ -1,0 +1,38 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 10 2021 11:21:16 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* resources/views/content/home.blade.php
+* resources/views/layout/header.blade.php
+* resources/views/welcome.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-9-8-2021-21-55-13.txt
+
+
+Deleted files:
+* views/home.blade.php
+* views/layout/header.blade.php
+
+
+Renamed files:
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]

@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 11 2021 10:05:27 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-11-8-2021-9-35-12.txt
+* database/migrations/2021_09_11_024231_create_admin_table.php
+
+
+Deleted files:
+
+
+Renamed files:

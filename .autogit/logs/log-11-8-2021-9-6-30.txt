@@ -1,0 +1,40 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 11 2021 09:06:30 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/AdminController.php
+* resources/views/admin/login.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-10-8-2021-23-12-19.txt
+* resources/views/admin/adminLayout.blade.php
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]

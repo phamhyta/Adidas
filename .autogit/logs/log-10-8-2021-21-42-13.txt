@@ -1,0 +1,107 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 10 2021 21:42:13 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* .env.example
+* config/database.php
+* resources/views/content/home.blade.php
+* routes/web.php
+* tailwind.config.js
+
+
+Created files:
+* .autogit/logs/log-10-8-2021-12-52-4.txt
+* admin/web/404.html
+* admin/web/basic_table.html
+* admin/web/chartjs.html
+* admin/web/css/bootstrap.min.css
+* admin/web/css/font-awesome.css
+* admin/web/css/font.css
+* admin/web/css/jqvmap.css
+* admin/web/css/lightbox.css
+* admin/web/css/minimal.css
+* admin/web/css/monthly.css
+* admin/web/css/morris.css
+* admin/web/css/style-responsive.css
+* admin/web/css/style.css
+* admin/web/dropzone.html
+* admin/web/flot_chart.html
+* admin/web/fontawesome.html
+* admin/web/fonts/FontAwesome.otf
+* admin/web/fonts/fontawesome-webfont.eot
+* admin/web/fonts/fontawesome-webfont.svg
+* admin/web/fonts/fontawesome-webfont.ttf
+* admin/web/fonts/fontawesome-webfont.woff
+* admin/web/fonts/fontawesome-webfont.woff2
+* admin/web/fonts/glyphicons-halflings-regular.woff
+* admin/web/fonts/glyphicons-halflings-regular.woff2
+* admin/web/form_component.html
+* admin/web/form_validation.html
+* admin/web/gallery.html
+* admin/web/glyphicon.html
+* admin/web/google_map.html
+* admin/web/grids.html
+* admin/web/images/1.png
+* admin/web/images/2.png
+* admin/web/images/3.png
+* admin/web/images/bg.jpg
+* admin/web/images/close.png
+* admin/web/images/g1.jpg
+* admin/web/images/g2.jpg
+* admin/web/images/g3.jpg
+* admin/web/images/g4.jpg
+* admin/web/images/g5.jpg
+* admin/web/images/g6.jpg
+* admin/web/images/g7.jpg
+* admin/web/images/g8.jpg
+* admin/web/images/g9.jpg
+* admin/web/images/mail.png
+* admin/web/images/minimal.png
+* admin/web/images/nav-expand.png
+* admin/web/images/next.png
+* admin/web/images/pass.png
+* admin/web/images/prev.png
+* admin/web/images/search-icon.png
+* admin/web/index.html
+* admin/web/js/bootstrap.js
+* admin/web/js/jquery.dcjqaccordion.2.7.js
+* admin/web/js/jquery.fileupload.js
+* admin/web/js/jquery.min.js
+* admin/web/js/jquery.nicescroll.js
+* admin/web/js/jquery.scrollTo.js
+* admin/web/js/jquery.slimscroll.js
+* admin/web/js/jquery.vmap.asia.js
+* admin/web/js/jquery.vmap.australia.js
+* admin/web/js/jquery.vmap.europe.js
+* admin/web/js/jquery.vmap.js
+* admin/web/js/jquery.vmap.sampledata.js
+* admin/web/js/jquery.vmap.world.js
+* admin/web/js/jquery2.0.3.min.js
+* admin/web/js/lightbox-plus-jquery.min.js
+* admin/web/js/monthly.js
+* admin/web/js/morris.js
+* admin/web/js/raphael-min.js
+* admin/web/js/script.js
+* admin/web/js/scripts.js
+* admin/web/login.html
+* admin/web/mail.html
+* admin/web/mail_compose.html
+* admin/web/registration.html
+* admin/web/responsive_table.html
+* admin/web/typography.html
+* admin/web/vector_map.html
+* admin/web/w3layouts-License.txt
+* app/Http/Controllers/HomeController.php
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]
+* [object Object]

@@ -1,0 +1,26 @@
+-------------------- Auto-Git Log --------------------
+		Sat Sep 11 2021 20:11:45 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/AdminController.php
+* app/Http/Controllers/categoryController.php
+* resources/views/admin/adminLayout.blade.php
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-11-8-2021-13-10-21.txt
+* app/Http/Controllers/voucherController.php
+* resources/views/admin/add_category.blade.php
+* resources/views/admin/add_voucher.blade.php
+* resources/views/admin/all_category.blade.php
+* resources/views/admin/all_voucher.blade.php
+* resources/views/admin/edit_category.blade.php
+* resources/views/admin/edit_voucher.blade.php
+
+
+Deleted files:
+
+
+Renamed files:

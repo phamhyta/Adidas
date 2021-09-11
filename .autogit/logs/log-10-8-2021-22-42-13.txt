@@ -1,0 +1,29 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 10 2021 22:42:13 GMT+0700 (Indochina Time)
+------------------------------------------------------
+
+Modified files:
+* routes/web.php
+
+
+Created files:
+* .autogit/logs/log-10-8-2021-22-11-42.txt
+* app/Http/Controllers/AdminController.php
+* public/backend/css/bootstrap.min.css
+* public/backend/css/font-awesome.css
+* public/backend/css/font.css
+* public/backend/css/jqvmap.css
+* public/backend/css/lightbox.css
+* public/backend/css/minimal.css
+* public/backend/css/monthly.css
+* public/backend/css/morris.css
+* public/backend/css/style-responsive.css
+* public/backend/css/style.css
+* public/mix-manifest.json
+* resources/views/admin/login.blade.php
+
+
+Deleted files:
+
+
+Renamed files:
