@@ -24,4 +24,5 @@ Route::get('/home', [HomeController::class, 'index']);
 //backend
 Route::get('/login', [AdminController::class, 'index']);
 Route::get('/dashboard', [AdminController::class, 'show_dashboard']);
+Route::get('/logout', [AdminController::class, 'logout']);
 Route::post('/dashboard', [AdminController::class, 'dashboard']);
