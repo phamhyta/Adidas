@@ -90,7 +90,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </a>
                     <ul class="sub">
 						<li><a href="{{ URL::to('/add_category') }}">Thêm</a></li>
-						<li><a href="glyphicon.html">Liệt kê</a></li>
+						<li><a href="{{ URL::to('/all_category') }}">Liệt kê</a></li>
+                    </ul>
+                </li>
+				<li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-book"></i>
+                        <span>voucher</span>
+                    </a>
+                    <ul class="sub">
+						<li><a href="{{ URL::to('/add_voucher') }}">Thêm</a></li>
+						<li><a href="{{ URL::to('/all_voucher') }}">Liệt kê</a></li>
                     </ul>
                 </li>
             </ul>            </div>
